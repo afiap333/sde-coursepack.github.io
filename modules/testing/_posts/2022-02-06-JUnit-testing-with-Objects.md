@@ -256,7 +256,7 @@ to read and understand tests.
 
 ### Test the interface, not the implementation
 
-Always try to write your tests to be *interface* facing, not implementation facing. For example, when tested `MySortedList`, it is a good idea to design tests that are agnostic of the underlying ArrayList. Instead, focus on how the outputs of methods in the public interface change based on the test method call.
+Always try to write your tests to be *interface* facing, not implementation facing. For example, when tested `MySortedList`, it is not a good idea to design tests that are agnostic of the underlying ArrayList. Instead, focus on how the outputs of methods in the public interface change based on the test method call.
 
 This idea of focusing on the interface over implementation, or abstraction, is a valuable design tool as well as a valuable testing tool. If implementation details change, such as changing the fields/structures to improve efficiency, but our tests only focus on the interface, we can often avoid needing to change our tests when the implementation changes.
 
